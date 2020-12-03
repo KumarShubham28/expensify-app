@@ -12,14 +12,14 @@ import { addExpense } from './actions/expenses';
 import getVisibleExpenses from './selectors/expenses';
 
 const store = configStore()
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 200 }));
-store.dispatch(addExpense({ description: 'Gas Bill', amount: 1000, createdAt: 300 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
+// store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 200 }));
+// store.dispatch(addExpense({ description: 'Gas Bill', amount: 1000, createdAt: 300 }));
+// store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
 // store.dispatch(setTextFilter('bill'))
 // setTimeout(() => store.dispatch(setTextFilter('Water')), 3000)
-const state = store.getState()
-const visibleExpenses = getVisibleExpenses(state.expense, state.filter)
-console.log(visibleExpenses)
+// const state = store.getState()
+// const visibleExpenses = getVisibleExpenses(state.expense, state.filter)
+// console.log(visibleExpenses)
 
 // import React from 'react';
 // import { BrowserRouter, Route, Switch, NavLink, Link } from 'react-router-dom';
